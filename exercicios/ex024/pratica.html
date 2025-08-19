@@ -8,9 +8,11 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             text-indent: 2px;
+            width: 75vw;
         }
         header {
             background-color: blue;
+            width: 95vw;
             font-size: 1.3em;
             font-weight: bold;
             padding: 20px;
@@ -19,15 +21,33 @@
         a {
             color: red;
         }
+        
+        
         header > nav > a:hover {
             
             text-decoration: solid;
         }
         iframe {
-            width: 60vw;
+            height: 100%;
+            width: 100%;
             margin: auto;
             display: block;
+        }
+         .video {
+            position: relative;
+            margin: 0px -20px 30px -20px;
+            padding: 20px;
+            padding-bottom: 58%; 
            
+
+        }
+        .video > iframe{
+            position:absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+            
         }
         footer {
             background-color: green;
@@ -54,7 +74,9 @@
         </p>
         <h2>Principais tecnologias da programação front end</h2>
         <p>As tecnologias mais utilizadas na<strong> programação front end</strong> são fundamentais para o desenvolvimento de sites responsivos e atraentes. O <strong>HTML</strong>(HyperText Markup Language) é a linguagem de marcação que estrutura o conteúdo da página. O <strong>CSS</strong>(Cascading Style Sheets) é responsável pela apresentação visual, permitindo a personalização de cores, fontes e layouts. Já o JavaScript adiciona interatividade, possibilitando a criação de animações, formulários dinâmicos e manipulação do DOM (Document Object Model).</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8xo1FID4TqU?si=Cz7UmVR7jGG8EOmt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/8xo1FID4TqU?si=Cz7UmVR7jGG8EOmt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe></div>
+        </section>
         <h2>Ferramentas de desenvolvimento</h2>
         <p>
             Os desenvolvedores front end utilizam uma variedade de <strong>ferramentas</strong> para otimizar seu fluxo de trabalho. Editores de código como <strong>Visual Studio Code</strong> e <strong>Sublime Text</strong> são populares entre os programadores, oferecendo recursos como destaque de sintaxe e autocompletar. Além disso, ferramentas de controle de versão como o <strong>Git</strong> são essenciais para gerenciar alterações no código e colaborar com outros desenvolvedores.

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <fieldset>
+        
+        <legend>
+            <h1>Exemplo de formulário</h1>
+        </legend>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required>
+            </p>
+            <fieldset>
+                <legend>Sexo</legend>
+                <p>
+                    <label for="isxmas">Masculino</label>
+                    <input type="radio" name="sxmas" id="isxmas" value="M" checked>
+                    <label for="isxfem">Feminino</label>
+                    <input type="radio" name="sxfem" id="isxfem" value="F">
+                </p>
+            </fieldset>
+            <p>
+                <label for="inum">Escolha um número</label>
+                <input type="number" name="num" id="inum" value="0">
+            </p>
+            <p>
+                <label for="imes">Mes de nascimento</label>
+                <input type="month" name="mes" id="imes" required>
+            </p>
+            <p>
+                <label for="ihora">Hora de nascimento</label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+            <p>
+                <label for="itel">Telefone </label>
+                <input type="tel" name="tel" id="itel"
+                pattern="(\(\d{2}\)\s)?(\d{4,5}\-\d{4})" placeholder="(xx)9xxxx-xxxx" required autocomplete="tel">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" min="5" maxlength="26" required>
+            </p>
+            <p>
+                <label for="icor">Escolha uma cor</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="inivel">Nivel de satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
